@@ -1,5 +1,5 @@
 export class MatchMediaMock {
-  handlers: Array<(event: MediaQueryListEvent) => void> = [];
+  private handlers: Array<(event: MediaQueryListEvent) => void> = [];
 
   mock(matches: boolean) {
     return {
